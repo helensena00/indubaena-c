@@ -1,0 +1,162 @@
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background: #f7f7f7;
+    color: #111;
+    line-height: 1.6;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* Encabezado */
+  header {
+    background: #a30000;
+    border-bottom: 3px solid #000;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .logo {
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    border-left: 8px solid #ffcc00;
+    padding-left: 10px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+  }
+  nav a.activo { color: #ffcc00; }
+
+  /* Secciones */
+  section { padding: 60px 40px; }
+  .contenedor { max-width: 1100px; margin: 0 auto; }
+  h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .linea {
+    width: 80px;
+    height: 6px;
+    background: #ffcc00;
+    margin-bottom: 28px;
+  }
+
+  /* Inicio */
+  #inicio .contenedor {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  .hero-texto { flex: 1 1 340px; }
+  .hero-texto h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  .hero-texto h1 span { color: #a30000; }
+  .hero-texto p { font-size: 15px; font-weight: 600; margin-bottom: 26px; }
+  .boton {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .hero-imagen {
+    flex: 1 1 340px;
+    border: 10px solid #ffcc00;
+    background: #ddd;
+  }
+  .hero-imagen img { display: block; width: 100%; height: auto; }
+
+  /* Servicios */
+  #servicios { background: #fff; }
+  .servicios-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .servicio {
+    border: 2px solid #000;
+    border-top: 8px solid #a30000;
+    padding: 20px;
+    background: #f7f7f7;
+  }
+  .servicio h3 { font-size: 18px; margin-bottom: 8px; }
+
+  /* Quiénes somos */
+  #quienes p { max-width: 760px; margin-bottom: 16px; }
+
+  /* Precios */
+  #precios { background: #fff; }
+  .precios-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .precio {
+    border: 2px solid #000;
+    padding: 24px;
+    text-align: center;
+  }
+  .precio h3 {
+    background: #a30000;
+    color: #fff;
+    padding: 10px;
+    margin: -24px -24px 18px;
+    font-size: 18px;
+  }
+  .precio .valor { font-size: 24px; font-weight: 800; margin-bottom: 10px; }
+  .nota { margin-top: 20px; font-size: 14px; }
+
+  /* Cotizaciones */
+  form { max-width: 600px; }
+  label { display: block; font-weight: 700; margin: 16px 0 6px; }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    border: 2px solid #000;
+    background: #fff;
+  }
+  textarea { min-height: 120px; resize: vertical; }
+  form .boton { margin-top: 22px; }
+
+  footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 28px 20px;
+    border-top: 6px solid #ffcc00;
+    font-size: 14px;
+  }
+  footer strong { color: #ffcc00; }
